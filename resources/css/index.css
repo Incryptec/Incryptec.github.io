@@ -1,0 +1,56 @@
+:root {
+    --color: #949494
+}
+
+body {
+    font-family: Lato, sans-serif;
+    min-width: 800px;
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #fdfdfd);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #585858, #272727);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0px;
+}
+
+#navbar {
+    width: 100vw;
+    background-color: #141414;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    position: absolute;
+    width: 590px;
+    height: 50px;
+    border: radius 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding-right: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:hover {
+    border-bottom: 5px solid white;
+}
