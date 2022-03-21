@@ -22,6 +22,8 @@ body {
     background: linear-gradient(to right, #585858, #272727);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0px;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 20px;
     overflow-x: hidden;
 }
@@ -136,7 +138,6 @@ section h1 {
 
 section h2 {
     font-size: 91px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -180,4 +181,8 @@ section .cards .text-card h3 {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+div .name {
+    font-size: 50px;
 }
