@@ -94,7 +94,10 @@ nav ul ul li {
 
 body {
     background: linear-gradient(to right, #919191, #535353);
-    ;
+}
+
+#bg {
+    background-image: url(../images/bg.png);
 }
 
 section {
