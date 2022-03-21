@@ -18,39 +18,50 @@ body {
     width: 100vw;
     background-color: #141414;
     font-weight: bold;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-nav {
-    position: absolute;
-    width: 590px;
-    height: 50px;
-    border: radius 8px;
-    font-size: 0;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
-    text-align: center;
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    background: #141414;
 }
 
-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
+nav ul li a {
     color: white;
     text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding-right: 3em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 9px 40px;
 }
 
-nav a:hover {
-    border-bottom: 5px solid white;
+nav ul li a:hover {
+    border-bottom: 5px solid #8b8a8a;
+    color: #8b8a8a;
+    transition: all ease-in-out 100ms;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 70px;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
 }
