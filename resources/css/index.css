@@ -171,3 +171,31 @@ section .cards .text-card h3 {
 div .name {
     font-size: 50px;
 }
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #303030;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #575757;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(27, 27, 27);
+}
