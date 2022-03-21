@@ -2,6 +2,10 @@
     --color: #949494
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,8 @@ body {
     background: linear-gradient(to right, #585858, #272727);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 #bg {
@@ -73,7 +78,7 @@ nav ul li a {
 nav ul li a:hover {
     border-bottom: 5px solid #a89212;
     color: #a89212;
-    transition: all ease-in-out 100ms;
+    transition: all ease-in-out 230ms;
 }
 
 nav ul ul {
@@ -126,6 +131,7 @@ section .container {
 
 section h1 {
     font-size: 150px;
+    text-shadow: 2px 5px 65px #000000;
 }
 
 section h2 {
