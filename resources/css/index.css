@@ -31,7 +31,7 @@ nav {
 
 #navbar {
     width: 100vw;
-    background-color: #303030;
+    background-color: #727171;
     font-weight: bold;
 }
 
@@ -51,7 +51,7 @@ nav ul {
 nav ul li {
     float: left;
     display: inline-block;
-    background: #303030;
+    background: #727171;
 }
 
 nav ul li a {
@@ -63,8 +63,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 5px solid #8b8a8a;
-    color: #8b8a8a;
+    border-bottom: 5px solid #272727;
+    color: #272727;
     transition: all ease-in-out 100ms;
 }
 
@@ -93,7 +93,7 @@ nav ul ul li {
 }
 
 body {
-    background: linear-gradient(to right, #919191, #535353);
+    background: linear-gradient(to right, #313131, #353434);
 }
 
 #bg {
@@ -135,7 +135,7 @@ section .cards {
 }
 
 section .cards .text-card {
-    background: #2696E9;
+    background: #e96426;
     margin: 20px;
     padding: 20px;
 }
