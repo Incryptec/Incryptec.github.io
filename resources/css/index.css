@@ -23,6 +23,33 @@ body {
 
 #bg {
     background-image: url(../images/bg.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bg h1 {
+    .box-bottom-shadow -webkit-box-shadow: 0 8px 6px -6px #e96426;
+    -moz-box-shadow: 0 8px 6px -6px #e96426;
+    box-shadow: 0 14px 6px -6px #e96426;
+}
+
+#blog {
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+}
+
+#contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
 }
 
 
@@ -66,8 +93,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 5px solid #a89212;
-    color: #a89212;
+    border-bottom: 5px solid #e96426;
+    color: #e96426;
     transition: all ease-in-out 230ms;
 }
 
@@ -98,12 +125,11 @@ nav ul ul li {
 section {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 section:nth-child(2n+1) {
     color: #fff;
+    background: #1D212B;
 }
 
 section:nth-child(2n) {
@@ -123,6 +149,10 @@ section h1 {
 section h2 {
     font-size: 91px;
     text-transform: uppercase;
+    text-align: center;
+    .box-bottom-shadow -webkit-box-shadow: 0 8px 6px -6px #e96426;
+    -moz-box-shadow: 0 8px 6px -6px #e96426;
+    box-shadow: 0 8px 6px -6px #e96426;
 }
 
 section p {
@@ -134,11 +164,7 @@ section .cards {
     text-align: center;
 }
 
-section .cards .text-card {
-    background: #e96426;
-    margin: 20px;
-    padding: 20px;
-}
+section .cards .text-card {}
 
 section .cards .text-card h3 {
     font-size: 50px;
