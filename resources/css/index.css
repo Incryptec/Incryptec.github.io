@@ -2,6 +2,128 @@
     --color: #949494
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+.has-small-font-size {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+hr {
+    border: 1px solid #c4c4c4;
+    margin: 15px 0px 15px 0px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,7 +140,6 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    overflow-x: hidden;
 }
 
 #bg {
@@ -36,12 +157,70 @@ body {
     box-shadow: 0 14px 6px -6px #e96426;
 }
 
+#about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mainWrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0px auto;
+    position: relative;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 50%);
+    align-items: left;
+}
+
+.mainLeft {
+    width: 53%;
+    height: 100vh;
+    float: left;
+    margin-right: 7%;
+    position: relative;
+    z-index: 100;
+    color: #ffffff;
+}
+
+.mainLeft #pfp {
+    height: 78.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mainRight {
+    width: 40%;
+    height: 100vh;
+    float: right;
+    text-align: left;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 80%;
+}
+
 #blog {
     min-height: 100vh;
     display: flex;
     justify-content: right;
     align-items: right;
     text-align: right;
+}
+
+#portfolio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
 }
 
 #contact {
@@ -150,6 +329,7 @@ section h2 {
     font-size: 91px;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
     .box-bottom-shadow -webkit-box-shadow: 0 8px 6px -6px #e96426;
     -moz-box-shadow: 0 8px 6px -6px #e96426;
     box-shadow: 0 8px 6px -6px #e96426;
@@ -164,13 +344,17 @@ section .cards {
     text-align: center;
 }
 
-section .cards .text-card {}
+section .cards .text-card {
+    align-items: center;
+    width: 100%;
+}
 
 section .cards .text-card h3 {
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 @media (max-width: 900px) {
