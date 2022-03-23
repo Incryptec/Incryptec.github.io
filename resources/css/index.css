@@ -1,7 +1,3 @@
-:root {
-    --color: #949494
-}
-
 html,
 body,
 div,
@@ -177,7 +173,8 @@ body {
         fill: transparent;
     }
     to {
-        fill: #ffffff;
+        fill: white;
+        opacity: 1;
     }
 }
 
@@ -207,8 +204,7 @@ body {
     max-width: 1400px;
     margin: 0px auto;
     position: relative;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 50%);
+    background: white;
     align-items: left;
 }
 
@@ -219,7 +215,7 @@ body {
     margin-right: 7%;
     position: relative;
     z-index: 100;
-    color: #ffffff;
+    color: #cfd0d0;
 }
 
 .mainLeft #pfp {
